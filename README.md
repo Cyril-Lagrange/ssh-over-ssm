@@ -100,7 +100,7 @@ Host <friendly-host-name>
     IdentityFile 'c:\Users\<username>\.ssh\<key-file>.pem'
     User rocky
     HostName <instance-id>
-    ProxyCommand "C:\Windows\System32\cmd.exe" /C "c:\Users\<username>\.ssh\ssm-proxy.bat" %h %p <aws_region> <aws_profile>
+    ProxyCommand "C:\Windows\System32\cmd.exe" /C "c:\Users\<username>\.ssh\ssm_proxy.bat" %h %p <aws_region> <aws_profile>
 ```
 
 Replace placeholders with your actual values:

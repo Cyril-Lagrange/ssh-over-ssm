@@ -39,4 +39,4 @@ else
     done
     # Instance is online now - start the session
     aws ssm start-session --target $HOST --document-name AWS-StartSSHSession --parameters portNumber=${PORT} --profile ${AWS_PROFILE} --region ${AWS_REGION}
-fi%
+fi

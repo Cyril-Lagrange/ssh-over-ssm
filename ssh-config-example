@@ -1,14 +1,14 @@
 #linux example
 Host <friendly-host-name>
     IdentityFile ~/.ssh/<keyfile>.pem
-    User rocky
+    User ec2-user
     HostName <instance-id>
     ProxyCommand sh -c "~/.ssh/ssm-proxy.sh %h %p  <aws-region> <aws-profile>"
 
 #windows example
 Host dev-node
     IdentityFile 'C:\Users\<username>\.ssh\<key-file>.pem'
-    User rocky
+    User ec2-user
     HostName <instance-id>
     ProxyCommand "C:\Windows\System32\cmd.exe" /C "%%USERPROFILE%%\.ssh\ssm-proxy.bat" %h %p <aws_region> <aws_profile>
     

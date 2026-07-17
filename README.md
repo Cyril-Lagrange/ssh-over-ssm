@@ -65,8 +65,8 @@ session-manager-plugin
 
 1. **Launch EC2 Instance:**
    - Go to AWS Console > EC2 > Launch Instance
-   - Search for "Rocky Linux" in AWS Marketplace
-   - Select Rocky Linux 8 or 9 AMI
+   - Use Amazon Linux (which includes the SSM agent, if you use another disto then you will have to install the SSM agent via user-data script)
+   
 
 2. **Configure Instance:**
    - Choose instance type (t3.medium recommended)

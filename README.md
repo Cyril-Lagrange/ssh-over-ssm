@@ -89,7 +89,7 @@ Add the following configuration to your SSH config file (`~/.ssh/config` on Linu
 ```
 Host <friendly-host-name>
     IdentityFile ~/.ssh/<keyfile>.pem
-    User rocky
+    User ec2-user
     HostName <instance-id>
     ProxyCommand sh -c "~/.ssh/ssm-proxy.sh %h %p <aws-region> <aws-profile>"
 ```
@@ -98,7 +98,7 @@ Host <friendly-host-name>
 ```
 Host <friendly-host-name>
     IdentityFile 'c:\Users\<username>\.ssh\<key-file>.pem'
-    User rocky
+    User ec2-user
     HostName <instance-id>
     ProxyCommand "C:\Windows\System32\cmd.exe" /C "c:\Users\<username>\.ssh\ssm_proxy.bat" %h %p <aws_region> <aws_profile>
 ```
